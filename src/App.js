@@ -4,6 +4,8 @@ import Header from './components/Header.js';
 import Interface from './components/Interface.js';
 import Footer from './components/Footer.js'
 
+//check .env file, set API_KEY
+//Designed for use with WeatherStack API. Adjust URL as appropriate.
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 export default class App extends Component {
