@@ -6,7 +6,10 @@ export default function Interface(props) {
    console.log(props.weatherData)
    return(
       <div className="interface">
-         <Form getWeather={props.getWeather} />
+         <Form 
+            getWeather={props.getWeather}
+            error={props.error}
+         />
          {props.visible ? <Weather weatherData={props.weatherData} /> : null}
       </div>
    );

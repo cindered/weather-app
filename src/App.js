@@ -29,6 +29,8 @@ export default class App extends Component {
     var city = e.target.elements.city.value;
     var country = e.target.elements.country.value;
     var url = 'http://api.weatherstack.com/current?access_key='+API_KEY+'&query='+city+','+country+'';
+    
+    this.setState({error: undefined});
 
     fetch(url, {
       method: 'GET',
@@ -63,6 +65,7 @@ export default class App extends Component {
           getWeather={this.getWeather} 
           weatherData={this.state.weatherData}
           visible={this.state.visible}
+          error={this.state.error}
         />
         <Footer />
       </div>

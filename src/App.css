@@ -127,7 +127,11 @@ button:hover {
   border-top-right-radius: 3px;
   border-left: solid 1px #a8b2d1;
   border-image: linear-gradient(0deg, #292d3e 2%, #a8b2d1 50%, #292d3e 98%) 1;
-  /*#a8b2d1*/
+
+  -webkit-animation: container-fade 1s;
+  -moz-animation: container-fade 1s; 
+  -ms-animation: container-fade 1s; 
+  animation: container-fade 1s;
 }
 
 .weather-container p {
@@ -136,6 +140,33 @@ button:hover {
   font-size: 16px;
   font-family: montserrat;
   color: #a8b2d1;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  font-family: montserrat;
+  font-size: 14px;
+  border-bottom: solid 1px #67cbbb;
+  border-image: linear-gradient(90deg, #292d3e 10%, #67cbbb 50%, #292d3e 90%) 1;
+  color: #67cbbb;
+
+  -webkit-animation: error-fade 1.5s;
+  -moz-animation: error-fade 1.5s;
+  -ms-animation: error-fade 1.5s;
+  animation: error-fade 1.5s;
+}
+@keyframes error-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes container-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @media only screen and (max-width: 768px) {
