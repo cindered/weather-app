@@ -36,21 +36,23 @@ export default class App extends Component {
       method: 'GET',
     }).then(res => res.json())
     .then(response => {
-
       console.log('API Data:', response)
-      
-      this.setState({
-        weatherData: {
-          city: response.location.name,
-          country: response.location.country,
-          temperature: response.current.temperature,
-          realfeel: response.current.feelslike,
-          humidity: response.current.humidity,
-          description: response.current.weather_descriptions[0],
-        },
-        visible: true,
-      })
-
+      if(response.success === false){
+        this.setState({error: response.error})
+      }
+      else {
+        this.setState({
+          weatherData: {
+            city: response.location.name,
+            country: response.location.country,
+            temperature: response.current.temperature,
+            realfeel: response.current.feelslike,
+            humidity: response.current.humidity,
+            description: response.current.weather_descriptions[0],
+          },
+          visible: true,
+        })
+      }
     })
     .catch(error =>  {
       console.error('Error:', error)
