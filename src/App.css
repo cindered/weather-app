@@ -126,7 +126,7 @@ button:hover {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
   border-left: solid 1px #a8b2d1;
-  border-image: linear-gradient(0deg, #292d3e 2%, #a8b2d1 50%, #292d3e 98%) 1;
+  border-image: linear-gradient(0deg, #292d3e 5%, #a8b2d1 50%, #292d3e 95%) 1;
 
   -webkit-animation: container-fade 1s;
   -moz-animation: container-fade 1s; 
