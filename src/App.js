@@ -4,8 +4,13 @@ import Header from './components/Header.js';
 import Interface from './components/Interface.js';
 import Footer from './components/Footer.js'
 
-//check .env file, set API_KEY
-//Designed for use with WeatherStack API. Adjust URL as appropriate.
+//**********************************
+// Check .env file, set API_KEY
+// Designed for use with WeatherStack API. 
+// Found at https://weatherstack.com
+// Adjust URL as appropriate.
+//**********************************
+
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 export default class App extends Component {
@@ -29,7 +34,8 @@ export default class App extends Component {
     var city = e.target.elements.city.value;
     var country = e.target.elements.country.value;
     var url = 'http://api.weatherstack.com/current?access_key='+API_KEY+'&query='+city+','+country+'';
-    
+
+
     this.setState({error: undefined});
 
     fetch(url, {
@@ -59,6 +65,7 @@ export default class App extends Component {
       this.setState({ error: error })
     });
   }
+
   render(){
     return (
       <div className='app-container'>
