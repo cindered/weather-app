@@ -16,18 +16,20 @@
 ## Installation / Set up
 
 1. Install node packages via package.json
+
    ```sh
    npm install
-   ```
-   or
+   ```  
    ```sh
    yarn
    ```
 2. Start the server
+
    ```sh
    npm start
    ```
    or
+   
    ```sh
    yarn start
    ```
