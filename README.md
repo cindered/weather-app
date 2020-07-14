@@ -4,10 +4,12 @@
 <p align="center">
    A responsive webapp that retrieves weather data from the WeatherStack API.
    <br>
-   Made using: 
-   *  React.js
-      *  React Spring
 </p>
+
+### Made using: 
+- React.js
+   - React Spring
+
 
 ![demo](https://raw.githubusercontent.com/cindered/weather-app/master/src/images/weather-app-ui.png)
 
@@ -17,8 +19,7 @@
    ```sh
    npm install
    ```
-   <p>/</p>
-
+   or
    ```sh
    yarn
    ```
@@ -26,7 +27,7 @@
    ```sh
    npm start
    ```
-   <p>/</p>
+   or
    ```sh
    yarn start
    ```
