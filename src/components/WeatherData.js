@@ -2,7 +2,6 @@ import React from 'react';
 
 
 export default function WeatherData(props) {
-      
    return(
    <div className="weather-data">
       <p>{props.weatherData.city}</p>
