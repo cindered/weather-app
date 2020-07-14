@@ -16,7 +16,7 @@
 ## Installation / Set up
 1. Fork / Download directory
    
-2. Then navigate to directory `.../weather-app`
+2. Navigate to directory `.../weather-app`
 
 3. Install node packages via package.json
 
