@@ -1,5 +1,6 @@
 import React from 'react';
 
+//User input component which uses the getWeather function on submit.
 export default function FormInput(props) {
    return(
       <div className="form-input">

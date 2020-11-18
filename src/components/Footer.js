@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Footer Component
 export default function Footer() {
    return(
       <div className="app-footer">
